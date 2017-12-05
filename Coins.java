@@ -1,24 +1,30 @@
 public class Coin
 {
 	private char type;
-	public Coin(int val)
+	private int value;
+	public Coin(String t)
 	{
-		switch (val) 
-		{
-			case 1:
-				type = 'p';
-			break;
-			case 5:
-				type = 'n';
-			break;
-			case 10:
-				type = 'd';
-			break;
-			case 25:
-				type = 'q';
-			break;
-		}
+		if (t.equalsIgnoreCase("penny")
+			type = 'p';
+		if (t.equalsIgnoreCase("nickel")	
+			type = 'n';
+		if (t.equalsIgnoreCase("dime")
+			type = 'd';
+			
+		if (t.equalsIgnoreCase("quarter")	
+			type = 'q';
+			
+		
 	}
+	public void setValue(int val)
+	{
+		
+	}
+	public void setType(char t)
+	{
+		
+	}
+	
 	public char getType()
 	{
 		return this.type;
