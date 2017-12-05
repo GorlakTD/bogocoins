@@ -5,10 +5,6 @@ public class Bogocoins
   private ArrayList<Coin> ref = new ArrayList<Coin>();
   private ArrayList<Coin> source = new ArrayList<Coin>();
   private int target = 30;
-  private int numPennies;
-  private int numNickels;
-  private int numDimes;
-  private int numQuarters;
   public void transmute()
   {
 	
@@ -22,14 +18,15 @@ public class Bogocoins
 			c.get(i).remove(k);
 		}
       }
-	  for(int k = 0; k < c.get(i).size; k++)
+	  while(cVal > 5)
 	  {
-		if (cVal == 5)
+		if (cVal == 25)
 			c.get(i).add('n');
 		else if (cVal == 10)
 			c.get(i).add('d');
-		else if (cVal == 25)
+		else if (cVal == 5)
 			c.get(i).add('q');
+	  }
       }
     }
   }
