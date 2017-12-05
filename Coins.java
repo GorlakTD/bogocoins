@@ -16,15 +16,34 @@ public class Coin
 			
 		
 	}
-	public void setValue(int val)
+	public boolean setValue(int val)
 	{
-		
+		if(val == 1 || val == 5 || val == 10 || val == 25)
+		{
+			this.value = val;
+			this.type = setType(val)
+			return true;
+		}
+		else
+			return false;
 	}
-	public void setType(char t)
-	{
-		
-	}
-	
+	public void setType(int val)
+		if(val == 1)
+		    {
+				return 'p';
+		    }
+		if(val == 5)
+			{
+				return 'n';
+			}
+    		if(val == 10)
+			{
+				return 'd';
+			}
+	    	if(val == 1)
+			{
+				return 'q';
+			}
 	public char getType()
 	{
 		return this.type;
