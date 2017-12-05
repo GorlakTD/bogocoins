@@ -48,4 +48,8 @@ public class Coin
 	{
 		return this.type;
 	}
+	public int getValue()
+	{
+		return this.Value;
+	}
 }
